@@ -1,0 +1,47 @@
+.order-item {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.order-item .line{
+    margin-top: 50px;
+}
+
+.order-item__wrap{
+    display: flex;
+    align-items: center;
+}
+
+.order-item__wrap .order-item__price{
+    font-size: 40px;
+}
+.order-item__wrap .order-item__price .cart-item__delete-icon{
+    margin-left: 120px;
+}
+
+.order-item__cover {
+    width: 200px;
+    margin-right: 30px;
+    width: 256px;
+    height: 200px;
+}
+
+.order-item__title {
+    margin-right: 130px;
+    color: #A8A8A8;
+    display: flex;
+    flex-direction: column;
+    max-width: 435px;
+}
+.order-item__title :first-child{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #313037;
+}
+
+.order-item__price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto;
+}
+

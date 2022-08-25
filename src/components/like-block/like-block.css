@@ -1,0 +1,8 @@
+.like-block {
+    position: relative;
+}
+.like-icon {
+    cursor: pointer;
+    position: relative;
+    margin-right: 50px;
+}

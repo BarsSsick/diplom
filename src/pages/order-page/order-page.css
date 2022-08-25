@@ -1,0 +1,41 @@
+.order-page {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 90px);
+}
+
+.order-page__total{
+    margin-left: auto;
+    margin-bottom: 72px;
+}
+
+.order-page__total-price {
+    font-size: 40px;
+    font-weight: 500;
+    width: 256px;
+    text-transform: uppercase;
+}
+.order-page__total-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-page__total-btn {
+    font-size: 24px;
+    font-weight: 700;
+    width: 256px;
+    text-align: center;
+    border: none;
+    padding: 18px;
+    margin-top: 25px;
+    background-color: #313037;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.order-page__title{
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 40px;
+}

@@ -1,0 +1,222 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header__store-title {
+    color: #313037;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.header__cart-btn-wrapper {
+    justify-content: flex-end;
+}
+
+.header__input input {
+    width: 542px;
+    border: 1px solid #E7E7E7;
+    font-size: 16px;
+    padding: 15px 20px;
+
+}
+
+.header__input {
+    position: relative;
+}
+
+.header__input-search {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #4C4B5E;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.menu__box{
+    z-index: 1;
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 27px;
+    right: 32px;
+    width: 20px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -7px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 7px;
+}
+
+/* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+.menu__box .line {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu__box .header__input input {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.menu__box .header__input {
+    margin-top: 56px;
+    margin-bottom: 48px;
+}
+
+.favorites {
+    font-family: 'Bebas Neue';
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 48px;
+    color: #313037;
+}
+.cart {
+    font-family: 'Bebas Neue';
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    line-height: 44px;
+    color: #313037;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+#menu__toggle:checked~.shadow {
+    visibility: visible;
+    left: 0;
+}
+
+.shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    visibility: hidden;
+    left: -100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+@media (max-width:768px) {
+    .header__input input {
+        display: none;
+    }
+
+    .header__input-search {
+        display: none;
+    }
+
+    .header__cart-btn-wrapper {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .menu .header__input-search {
+        display: block;
+        right: 50px;
+    }
+
+}
+
+@media (max-width:320px) {
+    .menu__box{
+        width: 100%;
+        overflow-y:hidden;
+    }
+    .shadow{
+        display: none;
+    }
+    .header__store-title{
+        z-index: 2;
+    }
+    .cart-block{
+        z-index: 2;
+    }
+    
+}

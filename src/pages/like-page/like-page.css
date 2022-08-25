@@ -1,0 +1,15 @@
+.heigh{
+    min-height: calc(100vh - 90px);
+}
+.like-page {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.like-page__title{
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+}

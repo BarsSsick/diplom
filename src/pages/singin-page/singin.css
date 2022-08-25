@@ -1,0 +1,78 @@
+.sing-in .tabs {
+    font-size: 0;
+    max-width: 544px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.sing-in .tabs>input[type="radio"] {
+    display: none;
+}
+
+.sing-in .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2 {
+    display: block;
+}
+
+.sing-in .tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #e0e0e0;
+    padding: 22px 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    font-family: 'Bebas Neue';
+    padding-top: 20px;
+    color: #A8A8A8;
+    
+}
+
+.sing-in .tabs>label:not(:first-of-type) {
+    border-left: none;
+    width: 46.87%;
+}
+.sing-in .tabs>label:not(:last-of-type) {
+    border-right: none;
+    width: 46.88%;
+}
+
+.sing-in .tabs>input[type="radio"]:checked+label {
+    border-bottom: 2px solid #000;
+    color: #313037;
+    padding-top: 19px;
+}
+
+.sing-in .tabs input {
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid #E7E7E7;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sing-in .tabs button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sing-in .sing-in__form .email, .sing-up__form .name {
+    padding-top: 35px;
+}
