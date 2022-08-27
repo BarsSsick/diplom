@@ -1,0 +1,60 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import './form.css'
+
+export const Form = ({ handleClick }) => {
+    const [email, setEmail] = useState('');
+    const [pass, setPass] = useState('');
+
+
+    return (
+
+        <div>
+            <div className="sing-in">
+                <div className="line"></div>
+                <div className="sing-in__wrap">
+
+                    <div className="sing-in__btns">
+                        <button className="singin sbtn checked">sing in</button>
+                        <Link className='link' to="/register">
+                            <button className="singup sbtn" >sing up</button>
+                        </Link>
+                    </div>
+
+                    <div className="sing-in__form">
+                        <div className="email pd-top">
+                            <div className="email__title">Email</div>
+                            <input onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Your email" type="email" className="email__input" />
+                        </div>
+                        <div className="password">
+                            <div className="password__title">Password</div>
+                            <input onChange={(e) => setPass(e.target.value)} value={pass} placeholder="Your password" type="password" className="password__input" />
+                        </div>
+                        <div className="forgot">Forgot password ?</div>
+                        <button onClick={() => handleClick(email, pass)} className="btn title">sign in</button>
+                    </div>
+                    {/* <div className="sing-up__form" id="content-2">
+                            <div className="name">
+                                <div className="name__title">Name</div>
+                                <input placeholder="Your name" type="text" className="name__input" />
+                            </div>
+                            <div className="email">
+                                <div className="email__title">Email</div>
+                                <input placeholder="Your email" type="text" className="email__input" />
+                            </div>
+                            <div className="password">
+                                <div className="password__title">Password</div>
+                                <input placeholder="Your password" type="text" className="password__input" />
+                            </div>
+                            <div className="confirm">
+                                <div className="confirm__title">Confirm password</div>
+                                <input placeholder="Confirm your password" type="text" className="confirm__input" />
+                            </div>
+                            <button className="btn title">sign up</button>
+                        </div> */}
+                </div>
+            </div>
+        </div>
+    )
+}
+

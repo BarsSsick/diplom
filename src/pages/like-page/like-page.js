@@ -20,7 +20,6 @@ export const LikePage = () => {
                 </Link>
             </div>
         )
-
     }
 
     return (

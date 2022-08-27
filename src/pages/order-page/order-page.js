@@ -10,7 +10,16 @@ export const OrderPage = () => {
     const items = useSelector((state) => state.cart.itemsInCart);
 
     if (items.length < 1) {
-        return <h1 className='heigh'>Your cart is empty!</h1>
+        return <div className='heigh'>
+            
+            <h1>Your cart is empty!</h1>
+                <Link to="/" >
+                    <CgArrowLongLeft
+                        size={55}
+                        className="arrow-back bottom"
+                    />
+                </Link>
+            </div>
     }
 
     return (
@@ -30,7 +39,7 @@ export const OrderPage = () => {
                 <div className="order-page__total-price title">
                     <span>total:</span><span>{calcTotalPrice(items)}</span>
                 </div>
-                <button className='order-page__total-btn'>check out</button>
+                <button className='order-page__total-btn '>check out</button>
             </div>
         </div>
     )

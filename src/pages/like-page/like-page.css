@@ -1,5 +1,6 @@
 .heigh{
     min-height: calc(100vh - 90px);
+    font-family: 'Bebas Neue';
 }
 .like-page {
     display: flex;
