@@ -1,1 +1,1 @@
-export * from './like-page.js';
+export * from './like-page.jsx';

@@ -74,3 +74,44 @@
 .like-item__title .rating:first-child {
     margin-bottom: 0;
 }
+
+@media (max-width:687px){
+    .like-item__title{
+        margin-right: 0;
+    }
+    .like-item__title-price{
+        margin-right: 20px;
+    }
+    
+ }
+ @media (max-width:320px) {
+     .like-item {
+         width: 266px;
+     }
+     
+     .item__title{
+        display: flex;
+     }
+
+     .like-item__wrap {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .like-item__wrap .like-item__cover {
+        margin-right: 0;
+    }
+
+    .like-item__delete-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #313037;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .like-item__title{
+        margin-top: 50px;
+    }
+ }

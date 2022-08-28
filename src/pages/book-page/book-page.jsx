@@ -65,7 +65,7 @@ export const BookPage = () => {
       </div>
 
       <div className="tabs">
-        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" defaultChecked />
         <label htmlFor="tab-btn-1">Description</label>
         <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
         <label htmlFor="tab-btn-2">Authors</label>

@@ -29,8 +29,8 @@ export const BlogFilter = ({ bookQuery, latest, setSearchParams }) => {
             <label >
                 <input type="checkbox" className='btn-checked' name="latest" checked={checked} onChange={e => setChecked(e.target.checked)}/>
             </label>
-            
-            <input className='btn-input-search' type="submit" value="Search"/>
+
+            <input className='btn-input-search' type="submit" value=""/>
             
             <Link to="/search"><AiOutlineSearch className="header__input-search" size={20} /></Link>
         </form>

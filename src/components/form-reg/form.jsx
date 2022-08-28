@@ -48,7 +48,7 @@ export const Form = ({ handleClick }) => {
                         </div>
                         <div className="confirm">
                             <div className="confirm__title">Confirm password</div>
-                            <input placeholder="Confirm your password" type="text" className="confirm__input" />
+                            <input placeholder="Confirm your password" type="password" className="confirm__input" />
                         </div>
                         <button onClick={() => handleClick(email, pass)} className="btn title">sign up</button>
                     </div>

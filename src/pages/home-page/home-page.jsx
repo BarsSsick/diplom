@@ -1,16 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom'
 import { BookItem } from '../../components/book-item';
 import './home-page.css';
 
 export let BOOKS = [];
 
 export const HomePage = () => {
-    const [data, setData] = useState([]);
+    const [books, setBook] = useState([]);
+
+    const [searchParams] = useSearchParams();
+
+    const bookQuery = searchParams.get('book') || '';
+    const latest = searchParams.has('latest');
+    const startsFrom = latest ? 80 : 1;
+
+
     useEffect(() => {
         fetch('https://api.itbook.store/1.0/search/mongodb')
-        .then(res => res.json())
-        .then((data) => setData(data.books));
-        console.log(data);
+            .then(res => res.json())
+            .then((data) => setBook(data.books));
+        
     })
     return (
         <div className="home-page">
@@ -18,7 +27,13 @@ export const HomePage = () => {
             <div>
                 <div className="home-page__title title">New Releases Books</div>
                 <div className="book-page__items">
-                    {data.map(book => <BookItem book={book} key={book.isbn13} />)}
+                    {
+                        books.filter(
+                            book => book.title.includes(bookQuery) && book.isbn13 >= startsFrom
+                        ).map(book => (
+                            <BookItem book={book} key={book.isbn13} />
+                        ))
+                    }
                 </div>
             </div>
             <div className="form">

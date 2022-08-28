@@ -1,1 +1,1 @@
-export * from './like-item.js';
+export * from './like-item.jsx';

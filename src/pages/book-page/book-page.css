@@ -175,4 +175,8 @@
     .order-item__wrap .order-item__cover .book-cover {
         padding: 50px;
     }
+
+    .tabs{
+        display: none;
+    }
 }

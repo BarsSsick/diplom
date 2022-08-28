@@ -1,1 +1,1 @@
-export * from './singin.js';
+export * from './singin.jsx';

@@ -8,10 +8,8 @@ import './order-page.css';
 
 export const OrderPage = () => {
     const items = useSelector((state) => state.cart.itemsInCart);
-
     if (items.length < 1) {
         return <div className='heigh'>
-
             <h1>Your cart is empty!</h1>
             <Link to="/" >
                 <CgArrowLongLeft
@@ -21,6 +19,8 @@ export const OrderPage = () => {
             </Link>
         </div>
     }
+
+    
 
     return (
         <div className="order-page">
@@ -37,7 +37,7 @@ export const OrderPage = () => {
             </div>
             <div className="order-page__total">
                 <div className="order-page__total-price title">
-                    <span>total:</span><span>{calcTotalPrice(items)}</span>
+                    <span>total:</span><span>${calcTotalPrice(items)}</span>
                 </div>
                 <button className='order-page__total-btn '>check out</button>
             </div>

@@ -1,1 +1,1 @@
-export const calcTotalPrice = (items) => items.reduce((acc, item) => (acc += item.price.slice(1)), 0);
+export const calcTotalPrice = (items) => items.reduce((acc, item) => (acc += item.price.slice(1)), 0).slice(1);
