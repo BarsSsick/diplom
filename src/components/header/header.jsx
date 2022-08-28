@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import {Link, useSearchParams} from 'react-router-dom'
 import { CartBlock } from "../cart-block";
 import { ProfileBlock } from "../profile-block";
+import { BlogFilter } from "../book-filer";
 import { LikeBlock } from "../like-block";
 import { AiOutlineSearch } from 'react-icons/ai'
 import "./header.css";
@@ -10,6 +11,10 @@ import "./header.css";
 
 
 export const Header = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+    const bookQuery = searchParams.get('post') || '';
+    const latest = searchParams.has('latest');
 
 
   return (
@@ -19,10 +24,7 @@ export const Header = () => {
           bookstore
         </Link>
       </div>
-      <div className="header__input">
-        <input placeholder="Search" type="text" />
-        <AiOutlineSearch className="header__input-search" size={20} />
-      </div>
+        <BlogFilter bookQuery={bookQuery} latest={latest} setSearchParams={setSearchParams} />
       <div className="wrapper header__cart-btn-wrapper">
         <LikeBlock />
         <CartBlock />
@@ -30,13 +32,13 @@ export const Header = () => {
       </div>
       <div className="menu">
         <CartBlock />
-        <div class="hamburger-menu">
+        <div className="hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
+          <label className="menu__btn" htmlFor="menu__toggle">
             <span></span>
           </label>
           <div className='shadow'></div>
-          <div class="menu__box">
+          <div className="menu__box">
             <div className="line"></div>
             <div className="header__input">
               <input placeholder="Search" type="text" />

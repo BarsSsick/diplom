@@ -10,7 +10,7 @@ const cartSlice = createSlice({
       state.itemsInCart.push(action.payload)
     },
     deleteItemFromCart: (state, action) => {
-      state.itemsInCart = state.itemsInCart.filter(book => book.isbn13!== action.payload)
+      state.itemsInCart = state.itemsInCart.filter(book => book.isbn13 !== action.payload)
     },
   }
 });

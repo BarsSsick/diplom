@@ -26,11 +26,11 @@ export const BookItem = ({ book }) => {
         <div className="book-item__botom">
           <span className="book-buy__price title">${book.price.split('').slice(1).join('')}</span>
           <div className="rating">
-            <AiFillStar width={14}  color="#4C4B5E"/>
-            <AiFillStar width={14} color="#4C4B5E"/>
-            <AiFillStar width={14} color="#4C4B5E"/>
-            <AiFillStar width={14} color="#4C4B5E"/>
-            <AiOutlineStar width={14} color="#4C4B5E"/>
+            <AiFillStar width={14} color="#4C4B5E" />
+            <AiFillStar width={14} color="#4C4B5E" />
+            <AiFillStar width={14} color="#4C4B5E" />
+            <AiFillStar width={14} color="#4C4B5E" />
+            <AiOutlineStar width={14} color="#4C4B5E" />
           </div>
         </div>
       </div>

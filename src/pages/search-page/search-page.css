@@ -1,0 +1,22 @@
+.home-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-page__title{
+    width: 100%;
+    font-size: 56px;
+    margin-top: 75px;
+    margin-bottom: 55px;
+}
+
+.book-page__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width:320px){
+    .book-page__items{
+        width: 280px;
+    }
+}

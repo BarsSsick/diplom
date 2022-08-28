@@ -4,7 +4,7 @@ import { deleteItemFromCart } from "../../store/cart/reducer";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import "./cart-item.css";
 
-export const CartItem = ({ title, price, isbn13}) => {
+export const CartItem = ({ title, price, isbn13 }) => {
   const dispatch = useDispatch();
 
   const handleDeleteClick = () => {

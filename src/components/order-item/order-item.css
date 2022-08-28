@@ -2,19 +2,21 @@
     margin-bottom: 50px;
     margin-top: 50px;
 }
-.order-item .line{
+
+.order-item .line {
     margin-top: 50px;
 }
 
-.order-item__wrap{
+.order-item__wrap {
     display: flex;
     align-items: center;
 }
 
-.order-item__wrap .order-item__price{
+.order-item__wrap .order-item__price {
     font-size: 40px;
 }
-.order-item__wrap .order-item__price .cart-item__delete-icon{
+
+.order-item__wrap .order-item__price .cart-item__delete-icon {
     margin-left: 120px;
 }
 
@@ -32,9 +34,11 @@
     flex-direction: column;
     max-width: 435px;
 }
-.order-item__title :first-child{
+
+.order-item__title :first-child {
+    font-family: 'Bebas Neue';
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 10px;
     color: #313037;
 }
@@ -44,4 +48,3 @@
     font-weight: bold;
     margin-left: auto;
 }
-

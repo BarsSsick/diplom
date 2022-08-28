@@ -6,7 +6,7 @@ import { setUser } from '../../store/slices/userSlice';
 
 export const Login = () => {
     const dispatch = useDispatch();
-    const  push  = useNavigate();
+    const push = useNavigate();
 
     const handleLogin = (email, password) => {
         const auth = getAuth();

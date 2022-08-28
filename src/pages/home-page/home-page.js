@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { BookItem } from '../../components/book-item';
 import './home-page.css';
 
@@ -6,11 +6,12 @@ export let BOOKS = [];
 
 export const HomePage = () => {
     const [data, setData] = useState([]);
-    useEffect(()=>{fetch('https://api.itbook.store/1.0/search/mongodb')
-    .then(res => res.json())
-    .then((data) => setData(data.books));
-    console.log(data);
-})
+    useEffect(() => {
+        fetch('https://api.itbook.store/1.0/search/mongodb')
+        .then(res => res.json())
+        .then((data) => setData(data.books));
+        console.log(data);
+    })
     return (
         <div className="home-page">
             <div className="line"></div>

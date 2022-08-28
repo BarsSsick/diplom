@@ -11,15 +11,15 @@ export const OrderPage = () => {
 
     if (items.length < 1) {
         return <div className='heigh'>
-            
+
             <h1>Your cart is empty!</h1>
-                <Link to="/" >
-                    <CgArrowLongLeft
-                        size={55}
-                        className="arrow-back bottom"
-                    />
-                </Link>
-            </div>
+            <Link to="/" >
+                <CgArrowLongLeft
+                    size={55}
+                    className="arrow-back bottom"
+                />
+            </Link>
+        </div>
     }
 
     return (

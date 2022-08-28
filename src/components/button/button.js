@@ -6,14 +6,14 @@ export const Button = ({ onClick, type, children, }) => {
     const btnClass = classNames({
         'btn': true,
         'title': true,
-      });
+    });
 
     return (
         <button
-            className={ btnClass }
-            onClick={ onClick }
+            className={btnClass}
+            onClick={onClick}
         >
-            { children }
+            {children}
         </button>
     )
 }

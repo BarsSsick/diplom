@@ -22,7 +22,7 @@
 }
 
 .header__input input {
-    width: 542px;
+    width: 401;
     border: 1px solid #E7E7E7;
     font-size: 16px;
     padding: 15px 20px;
@@ -45,7 +45,7 @@
     display: none;
 }
 
-.menu__box{
+.menu__box {
     z-index: 1;
 }
 
@@ -132,6 +132,7 @@
     margin-bottom: 48px;
     color: #313037;
 }
+
 .cart {
     font-family: 'Bebas Neue';
     display: block;
@@ -205,18 +206,21 @@
 }
 
 @media (max-width:320px) {
-    .menu__box{
+    .menu__box {
         width: 100%;
-        overflow-y:hidden;
+        overflow-y: hidden;
     }
-    .shadow{
+
+    .shadow {
         display: none;
     }
-    .header__store-title{
+
+    .header__store-title {
         z-index: 2;
     }
-    .cart-block{
+
+    .cart-block {
         z-index: 2;
     }
-    
+
 }

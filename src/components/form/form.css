@@ -6,12 +6,13 @@
     border: 1px solid #e0e0e0;
 }
 
-.sing-in__btns{
+.sing-in__btns {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #e0e0e0;
 }
-.sing-in__btns .link{
+
+.sing-in__btns .link {
     white-space: nowrap;
     width: 40%;
     text-align: center;
@@ -47,7 +48,7 @@
     border-bottom: 2px solid #313037;
     color: #313037;
     padding-top: 19px;
-    
+
 }
 
 .sing-in .sing-in__form input {
@@ -60,13 +61,17 @@
     display: block;
 }
 
-.sing-in .sing-in__form .email .email__title, .password__title, .forgot, .name__title, .confirm__title{
+.sing-in .sing-in__form .email .email__title,
+.password__title,
+.forgot,
+.name__title,
+.confirm__title {
     display: block;
     width: 84%;
     margin: 0 auto;
 }
 
-.sing-in  .btn {
+.sing-in .btn {
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -74,4 +79,3 @@
 .sing-in .pd-top {
     padding-top: 35px;
 }
-

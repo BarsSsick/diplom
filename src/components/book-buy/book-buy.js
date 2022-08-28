@@ -7,7 +7,7 @@ import "./book-buy.css";
 export const BookBuy = ({ book }) => {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.itemsInCart);
-  const isItemInCart = items.some((item) => item.isbn13=== book.isbn13);
+  const isItemInCart = items.some((item) => item.isbn13 === book.isbn13);
 
   const handleClick = (e) => {
     e.stopPropagation();
@@ -17,11 +17,11 @@ export const BookBuy = ({ book }) => {
       dispatch(setItemInCart(book));
     }
   };
- 
+
   return (
     <div className="book-buy">
       <Button
-        type={isItemInCart ? "secondary" : "primary" }
+        type={isItemInCart ? "secondary" : "primary"}
         onClick={handleClick}
       >
         {isItemInCart ? "Remove from cart" : "add to cart"}

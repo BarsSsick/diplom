@@ -1,0 +1,31 @@
+.header__input {
+    display: flex;
+    width: 450px;
+}
+
+.header__input input {
+    width: 401px;
+    outline: none;
+}
+
+.header__input label {
+    width: 2px;
+}
+
+.header__input .btn-input-search {
+    width: 50px;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    border-left: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.btn-checked {
+    visibility: hidden
+}
+.header__input .btn-search {
+    border-right: none ;
+}

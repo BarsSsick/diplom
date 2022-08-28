@@ -1,5 +1,4 @@
-
-.book-item__like{
+.book-item__like {
     width: 56px;
     height: 56px;
     background-color: #313037;
@@ -7,7 +6,8 @@
     top: 0px;
     right: 0px;
 }
-.book-item__like .like-icon{
+
+.book-item__like .like-icon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

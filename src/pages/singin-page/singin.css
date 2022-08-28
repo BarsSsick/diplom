@@ -95,6 +95,7 @@
     .profile-page__password .box input {
         width: 94%;
     }
+
     .profile-page__password .profile-page__pass input {
         width: 94%;
     }
@@ -109,7 +110,7 @@
         width: 328px;
     }
 
-    .profile-page__name{
+    .profile-page__name {
         margin-right: 0;
     }
 
@@ -117,7 +118,7 @@
         margin-right: 0px;
     }
 
-    .profile-page__form{
+    .profile-page__form {
         width: 685px;
         margin-right: 0;
         margin: 0 auto;
@@ -125,7 +126,7 @@
 }
 
 @media (max-width:320px) {
-    .profile-page__form{
+    .profile-page__form {
         width: 271px;
         margin: 0 auto;
     }
@@ -137,24 +138,28 @@
     .profile-page__password .box input {
         width: 85%;
     }
+
     .profile-page__password .profile-page__pass input {
         width: 85%;
     }
+
     .profile-page__btns {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .profile-page__btns button{
+
+    .profile-page__btns button {
         width: 271px;
         margin-top: 24px;
     }
 
-    .profile-page__btns{
+    .profile-page__btns {
         margin-top: 36px;
         margin-bottom: 56px;
     }
-    .profile-page__password{
+
+    .profile-page__password {
         margin-bottom: 56px;
     }
 }

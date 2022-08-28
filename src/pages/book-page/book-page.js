@@ -35,14 +35,14 @@ export const BookPage = () => {
         <div className="book-page__right">
           <div className="line"></div>
           <div className="book-item__botom">
-          <span className="book-buy__price">${book.price.split('').slice(1).join('')}</span>
-          <div className="rating">
-            <AiFillStar width={14}  color="#4C4B5E"/>
-            <AiFillStar width={14} color="#4C4B5E"/>
-            <AiFillStar width={14} color="#4C4B5E"/>
-            <AiFillStar width={14} color="#4C4B5E"/>
-            <AiOutlineStar width={14} color="#4C4B5E"/>
-          </div>
+            <span className="book-buy__price">${book.price.split('').slice(1).join('')}</span>
+            <div className="rating">
+              <AiFillStar width={14} color="#4C4B5E" />
+              <AiFillStar width={14} color="#4C4B5E" />
+              <AiFillStar width={14} color="#4C4B5E" />
+              <AiFillStar width={14} color="#4C4B5E" />
+              <AiOutlineStar width={14} color="#4C4B5E" />
+            </div>
           </div>
           <div className="book-page__info">
             <div className="book-page__info-text">
@@ -63,32 +63,32 @@ export const BookPage = () => {
           <div className="preview">Preview book</div>
         </div>
       </div>
-      
-      <div class="tabs">
-        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked/>
-          <label for="tab-btn-1">Description</label>
-          <input type="radio" name="tab-btn" id="tab-btn-2" value=""/>
-            <label for="tab-btn-2">Authors</label>
-            <input type="radio" name="tab-btn" id="tab-btn-3" value=""/>
-              <label for="tab-btn-3">Reviews</label>
-              <div id="content-1">
-              {book.desc}
-              </div>
-              <div id="content-2">
-              {book.authors}
-              </div>
-              <div id="content-3">
-              {book.reviews}
-              </div>
-            </div>
-            <div className="form">
-              <div className="form__title title">Subscribe to Newsletter</div>
-              <div className="form__text">Be the first to know about new IT books, upcoming releases, exclusive offers and more.</div>
-              <div className="form__search">
-                <input placeholder="Your email" type="text" />
-                <button>Subscribe</button>
-              </div>
-            </div>
-          </div>
-          );
+
+      <div className="tabs">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+        <label htmlFor="tab-btn-1">Description</label>
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+        <label htmlFor="tab-btn-2">Authors</label>
+        <input type="radio" name="tab-btn" id="tab-btn-3" value="" />
+        <label htmlFor="tab-btn-3">Reviews</label>
+        <div id="content-1">
+          {book.desc}
+        </div>
+        <div id="content-2">
+          {book.authors}
+        </div>
+        <div id="content-3">
+          {book.reviews}
+        </div>
+      </div>
+      <div className="form">
+        <div className="form__title title">Subscribe to Newsletter</div>
+        <div className="form__text">Be the first to know about new IT books, upcoming releases, exclusive offers and more.</div>
+        <div className="form__search">
+          <input placeholder="Your email" type="text" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  );
 };

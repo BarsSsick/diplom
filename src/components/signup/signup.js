@@ -1,7 +1,7 @@
 
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
-import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { Form } from '../form-reg';
 import { setUser } from '../../store/slices/userSlice';
 
@@ -13,7 +13,7 @@ export const SignUp = () => {
         const auth = getAuth();
         console.log(auth)
         createUserWithEmailAndPassword(auth, email, password)
-            .then(({user}) => {
+            .then(({ user }) => {
                 console.log(user);
                 dispatch(setUser({
                     email: user.email,

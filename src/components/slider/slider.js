@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const Slider = () => {
     const [items, setItem] = useState()
 
-    return(
+    return (
         <div>
-            
+
         </div>
     )
 }

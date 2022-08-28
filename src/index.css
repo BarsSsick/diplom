@@ -12,14 +12,14 @@ body {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 24px;
-  
+
 }
 
 a {
   text-decoration: none;
 }
 
-.title{
+.title {
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -79,22 +79,25 @@ a {
   width: 100%;
 }
 
-@media (max-width:320px){
-    .form{
-      padding: 24px;
-    }
-    .form__search{
-      flex-direction: column;
-    }
-    .form .form__search {
-      width: 176px;
-      margin-right: 0;
-    }
-    .form .form__search button{
-      margin-right: 0;
-      height: 50px;
-      width: 224px;
-      margin-top: 24px;
-      text-align: center;
-    }
+@media (max-width:320px) {
+  .form {
+    padding: 24px;
+  }
+
+  .form__search {
+    flex-direction: column;
+  }
+
+  .form .form__search {
+    width: 176px;
+    margin-right: 0;
+  }
+
+  .form .form__search button {
+    margin-right: 0;
+    height: 50px;
+    width: 224px;
+    margin-top: 24px;
+    text-align: center;
+  }
 }

@@ -5,7 +5,7 @@ import React from "react";
 
 export const ratingChanged = (newRating) => {
     return (
-        <ReactStars 
+        <ReactStars
             count={5}
             onChange={ratingChanged}
             size={24}

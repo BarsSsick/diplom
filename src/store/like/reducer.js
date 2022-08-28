@@ -10,7 +10,7 @@ const likeSlice = createSlice({
       state.itemsInLike.push(action.payload)
     },
     deleteItemFromLike: (state, action) => {
-      state.itemsInLike = state.itemsInLike.filter(book => book.isbn13!== action.payload)
+      state.itemsInLike = state.itemsInLike.filter(book => book.isbn13 !== action.payload)
     },
   }
 });

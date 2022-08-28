@@ -4,18 +4,18 @@ import "./profile-block.css";
 
 export const ProfileBlock = () => {
   const navigate = useNavigate();
-  const handleProfileClick =() =>{
+  const handleProfileClick = () => {
     navigate(`/singin`)
   }
 
   return (
     <div className="profile-block">
-     <FiUser
-     color="black"
-     size={25}
-     className="prof-icon"
-     onClick={handleProfileClick}
-     />
+      <FiUser
+        color="black"
+        size={25}
+        className="prof-icon"
+        onClick={handleProfileClick}
+      />
     </div>
   );
 };

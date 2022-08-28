@@ -7,13 +7,13 @@ import "./cart-block.css";
 export const CartBlock = () => {
   const items = useSelector((state) => state.cart.itemsInCart);
   const navigate = useNavigate();
-  const handleLikeClick =() =>{
+  const handleLikeClick = () => {
     navigate(`/order`)
   }
 
   return (
     <div className="cart-block">
-      <ItemsInCart quantity={items.length}/>
+      <ItemsInCart quantity={items.length} />
       <CgShoppingBag
         color="black"
         size={25}

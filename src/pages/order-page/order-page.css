@@ -4,7 +4,7 @@
     min-height: calc(100vh - 90px);
 }
 
-.order-page__total{
+.order-page__total {
     margin-left: auto;
     margin-bottom: 72px;
 }
@@ -15,6 +15,7 @@
     width: 256px;
     text-transform: uppercase;
 }
+
 .order-page__total-price {
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@
     cursor: pointer;
 }
 
-.order-page__title{
+.order-page__title {
     font-size: 56px;
     font-weight: 700;
     margin-top: 40px;
